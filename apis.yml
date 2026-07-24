@@ -1,7 +1,25 @@
 aid: cencorp
-name: cencorp
-description: cencorp is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cencorp.png
+name: Cencorp
+description: Cencorp (Zhuhai) Industrial Technology Co., Ltd. is a process-automation equipment
+  manufacturer that designs and builds high-end laser processing, dispensing, automated optical
+  inspection (AOI), and system-integration & automation systems for the consumer electronics,
+  automotive electronics, semiconductor, and new-energy industries. Formed in 2020 and combining
+  the acquired Finland-based Cencorp automation business with operations headquartered in Zhuhai,
+  China, the company runs 12 offices worldwide with 400+ R&D engineers and 300+ patents, and is a
+  portfolio company of Qiming Venture Partners. It exposes no public developer API, SDK, or
+  developer portal — this is a physical automation-equipment business.
 url: https://raw.githubusercontent.com/api-evangelist/cencorp/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Industrial Automation
+- Manufacturing
+- Laser Processing
+- Dispensing
+- Automated Optical Inspection
+- Semiconductor
+- Electronics Manufacturing
+- New Energy
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +47,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/cencorp-domain-security.yml
 - type: Website
-  url: https://cencorp.com.cn
+  url: https://www.cencorp.com.cn/en-us
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
